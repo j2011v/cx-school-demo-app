@@ -197,7 +197,12 @@ export const CheckerLayout = ({ children, nav }) => (
             <div class="mt-4 px-6 py-3 text-gray-400 text-sm">Cx School</div>
             <NavItem text="TODO" icon="cog" href="~/todo" />
             <NavItem text="EasyWire" icon="cash" href="~/easywire" />
+            <NavItem text="Components" icon="cog" href="~/components" />
             <NavItem text="Forms" icon="cog" href="~/forms" />
+            <NavItem text="Smart Route" icon="cog" href="~/smart" />
+            <NavItem text="Smart Route 2" icon="cog" href="~/smart2" />
+            <NavItem text="Private Route" icon="cog" href="~/private" />
+            <NavItem text="Private Route 2" icon="cog" href="~/private2" />
 
             <div class="mt-4 px-6 py-3 text-gray-400 text-sm">Administration</div>
             <NavItem text="Settings" icon="cog" href="~/settings" />

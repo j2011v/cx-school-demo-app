@@ -11,7 +11,12 @@ import SignIn from './pages/sign-in';
 import { SandboxedRoute } from '../components/SandboxedRoute';
 import InvoiceRoutes from './invoices';
 import Forms from './forms';
+import Smart from './smart';
+import Private from './private';
+import Components from './components';
 import { PageNotImplemented } from '../components/PageNotImplemented';
+import { RescopedSandboxedRoute } from '../components/RescopedSandboxedRoute';
+import { PrivateRoute } from '../components/PrivateRoute';
 
 export default () => (
    <cx>
@@ -37,6 +42,21 @@ export default () => (
             <SandboxedRoute route="~/forms">
                <Forms />
             </SandboxedRoute>
+            <SandboxedRoute route="~/components">
+               <Components />
+            </SandboxedRoute>
+            <RescopedSandboxedRoute url-bind="url" route="~/smart" storage-bind="smartPages">
+               <Smart />
+            </RescopedSandboxedRoute>
+            <RescopedSandboxedRoute url-bind="url" route="~/smart2" storage-bind="smartPages">
+               <Smart />
+            </RescopedSandboxedRoute>
+            <PrivateRoute url-bind="url" route="~/private">
+               <Private />
+            </PrivateRoute>
+            <PrivateRoute url-bind="url" route="~/private2">
+               <Private />
+            </PrivateRoute>
             <Route route="~/customers" url-bind="url" prefix>
                <PageNotImplemented />
             </Route>

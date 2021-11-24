@@ -1,0 +1,16 @@
+.cxb-colorcheckbox {
+   padding: 10px;
+   background-color: lightgrey;
+   display: inline-block;
+   width: 32px;
+   height: 32px;
+   cursor: pointer;
+
+   &.cxs-on {
+      background-color: lightgreen;
+   }
+
+   &.cxs-off {
+      background-color: red;
+   }
+}
